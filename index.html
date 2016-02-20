@@ -1,0 +1,135 @@
+<html>
+
+	<head>
+		<title>A Blank Cube with Proper Colors</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+
+<body>
+	<!-- Blank Cube starts here. This div sets the size of a
+		 box that holds the cube inside.
+	-->
+	<div class="cubeholder">
+		<!--  The Upper face div holds 9 divs, one for each 
+			  of the tiles. Each tile will have the number
+			  on it as a reference for now. 
+			  			-I will remove them later-
+		-->
+		<!--  The Top face starts off yellow: topY -->
+		<div class="cubefaceU">
+			<div id="topY0">0</div>
+			<div id="topY1">1</div>
+			<div id="topY2">2</div>
+			<div id="topY3">3</div>
+			<div id="topY4">4</div>
+			<div id="topY5">5</div>
+			<div id="topY6">6</div>
+			<div id="topY7">7</div>
+			<div id="topY8">8</div>
+		</div>
+		
+		<!--  The Left face starts off orange: leftO -->
+		<div class="cubefaceL">
+			<div id="leftO0">0</div>
+			<div id="leftO1">1</div>
+			<div id="leftO2">2</div>
+			<div id="leftO3">3</div>
+			<div id="leftO4">4</div>
+			<div id="leftO5">5</div>
+			<div id="leftO6">6</div>
+			<div id="leftO7">7</div>
+			<div id="leftO8">8</div>	
+		</div>
+		
+		<!--  The Front face starts off blue: frontB -->
+		<div class="cubefaceF">
+			<div id="frontB0">0</div>
+			<div id="frontB1">1</div>
+			<div id="frontB2">2</div>
+			<div id="frontB3">3</div>
+			<div id="frontB4">4</div>
+			<div id="frontB5">5</div>
+			<div id="frontB6">6</div>
+			<div id="frontB7">7</div>
+			<div id="frontB8">8</div>	
+		</div>
+		
+		<!--  The Right face starts off red: rightR -->
+		<div class="cubefaceR">
+			<div id="rightR0">0</div>
+			<div id="rightR1">1</div>
+			<div id="rightR2">2</div>
+			<div id="rightR3">3</div>
+			<div id="rightR4">4</div>
+			<div id="rightR5">5</div>
+			<div id="rightR6">6</div>
+			<div id="rightR7">7</div>
+			<div id="rightR8">8</div>	
+		</div>
+		
+		<!--  The Back face starts off green: backG -->
+		<div class="cubefaceB">
+			<div id="backG0">0</div>
+			<div id="backG1">1</div>
+			<div id="backG2">2</div>
+			<div id="backG3">3</div>
+			<div id="backG4">4</div>
+			<div id="backG5">5</div>
+			<div id="backG6">6</div>
+			<div id="backG7">7</div>
+			<div id="backG8">8</div>	
+		</div>
+		
+		<!--  The Bottom face starts off white: botW -->
+		<div class="cubefaceD">
+			<div id="botW0">0</div>
+			<div id="botW1">1</div>
+			<div id="botW2">2</div>
+			<div id="botW3">3</div>
+			<div id="botW4">4</div>
+			<div id="botW5">5</div>
+			<div id="botW6">6</div>
+			<div id="botW7">7</div>
+			<div id="botW8">8</div>	
+		</div>
+		
+	</div>
+
+	<div class="buttonholder">	
+		<div class="cubeButtons">
+			<div id="topButtons">
+				<button id="rotateTop" class="button"> Top Clockwise</button><br />
+				<button id="rotateTopp" class="button"> Top Counter</button>
+			</div>
+			<div id="leftButtons">
+				<button id="rotateLeft" class="button"> Left Clockwise</button>
+				<button id="rotateLeftp" class="button"> Left Counter</button>
+			</div>
+			<div id="frontButtons">
+				<button id="rotateFront" class="button"> Front Clockwise</button>
+				<button id="rotateFrontp" class="button"> Front Counter</button>
+			</div>
+			<div id="rightButtons">
+				<button id="rotateRight" class="button"> Right Clockwise</button>
+				<button id="rotateRightp" class="button"> Right Counter</button>
+			</div>
+			<div id="backButtons">
+				<button id="rotateBack" class="button"> Back Clockwise</button>
+				<button id="rotateBackp" class="button"> Back Counter</button>
+			</div>
+			<div id="bottomButtons">
+				<button id="rotateBottom" class="button"> Bottom Clockwise</button>
+				<button id="rotateBottomp" class="button"> Bottom Counter</button>
+			</div>
+		</div>
+	</div>
+		<div>
+				<button id="rotateMiddle" class="button"> Middle Clockwise</button>
+				<button id="rotateMiddlep" class="button"> Middle Counter</button>
+		</div>
+	
+	<script type="text/javascript" src="js/newcube.js"></script>
+	<!--  <script type="text/javascript" src="js/cubecore.js"></script> -->
+
+</body>
+</html>
