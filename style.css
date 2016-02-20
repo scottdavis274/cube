@@ -1,0 +1,80 @@
+.button {
+	margin-top: 8px;	
+}
+
+.buttonholder {
+	width:480px;
+	height:180px;
+	background-color:lightgray;
+	text-align:center;
+}
+
+.cubeholder {
+	width:600px;
+	height:450px;
+	background-color:gray;
+	font-size:15px;
+	text-align:right;
+}
+
+.cubefaceL, .cubefaceU, .cubefaceR, .cubefaceF, .cubefaceB, .cubefaceD {
+	width:150px;
+	height:150px;
+	/*  background-color:blue; */
+	float:left;
+}
+
+.cubefaceU, .cubefaceD {
+	display:block;
+	margin-left:150px;
+	margin-right:300px;
+}
+
+#topY0, #topY1, #topY2, #topY3, #topY4, #topY5, #topY6, #topY7, #topY8, 
+#leftO0, #leftO1, #leftO2, #leftO3, #leftO4, #leftO5, #leftO6, #leftO7, #leftO8,
+#frontB0, #frontB1, #frontB2, #frontB3, #frontB4, #frontB5, #frontB6, #frontB7, #frontB8,
+#rightR0, #rightR1, #rightR2, #rightR3, #rightR4, #rightR5, #rightR6, #rightR7, #rightR8,
+#backG0, #backG1, #backG2, #backG3, #backG4, #backG5, #backG6, #backG7, #backG8,
+#botW0, #botW1, #botW2, #botW3, #botW4, #botW5, #botW6, #botW7, #botW8 {
+	width:42px;
+	height:42px;
+	border:4px solid #000;
+	float:left;
+}
+
+#topButtons, #leftButtons, #frontButtons, #rightButtons, #bottomButtons, #backButtons {
+	width:118px;
+	height:58px;
+	float:left;
+	border:1px solid #000;
+}
+
+#topButtons, #bottomButtons {
+	margin-left:120px;
+	margin-right:240px;
+}
+
+#topY0, #topY1, #topY2, #topY3, #topY4, #topY5, #topY6, #topY7, #topY8, #topButtons {
+	background-color:yellow;
+} 
+
+#leftO0, #leftO1, #leftO2, #leftO3, #leftO4, #leftO5, #leftO6, #leftO7, #leftO8, #leftButtons {
+	background-color:orange;
+}
+
+#frontB0, #frontB1, #frontB2, #frontB3, #frontB4, #frontB5, #frontB6, #frontB7, #frontB8, #frontButtons {
+	background-color:#0066ff;
+}
+
+#rightR0, #rightR1, #rightR2, #rightR3, #rightR4, #rightR5, #rightR6, #rightR7, #rightR8, #rightButtons {
+	background-color:#ff3333;
+}
+
+#backG0, #backG1, #backG2, #backG3, #backG4, #backG5, #backG6, #backG7, #backG8, #backButtons {
+	background-color:green;
+}
+
+#botW0, #botW1, #botW2, #botW3, #botW4, #botW5, #botW6, #botW7, #botW8, #bottomButtons {
+	background-color:white;
+}
+
