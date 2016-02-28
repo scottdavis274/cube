@@ -1,36 +1,80 @@
+body {
+	background-color:#666;
+	perspective: 1200px;
+	/* transform-style: preserve-3d; */
+}
+
+.invisHolder {
+	transform:rotateX(45deg);
+	transform-style: preserve-3d;
+}
+
 .button {
-	margin-top: 8px;	
+	margin-top: 8px;
+	width:50%;
+	height:33%;
 }
 
 .buttonholder {
-	width:480px;
-	height:180px;
-	background-color:lightgray;
+	width:900px;
+	height:60px;
 	text-align:center;
+	position:fixed;
+	margin:200px 250px 200px 250px;
 }
 
 .cubeholder {
 	width:600px;
-	height:450px;
-	background-color:gray;
-	font-size:15px;
-	text-align:right;
+	height:600px;
+	/* background-color:gray; */
+	position: relative;
+	margin:-200px auto;
+	transform: rotateZ(45deg) translateZ(-100px);
+	transform-style: preserve-3d;
 }
 
 .cubefaceL, .cubefaceU, .cubefaceR, .cubefaceF, .cubefaceB, .cubefaceD {
 	width:150px;
 	height:150px;
-	/*  background-color:blue; */
-	float:left;
+	position: relative;
+	transform-style: preserve-3d;
 }
 
-.cubefaceU, .cubefaceD {
-	display:block;
-	margin-left:150px;
-	margin-right:300px;
+.cubefaceF {
+	transform:translateX(225px) translateY(75px) rotateX(-90deg) translateZ(75px);
+	background:blue;
+	transform-style: preserve-3d;
 }
 
-#topY0, #topY1, #topY2, #topY3, #topY4, #topY5, #topY6, #topY7, #topY8, 
+.cubefaceU {
+	transform:translateX(225px) translateY(225px) translateZ(75px);
+	background:yellow;
+}
+
+.cubefaceR {
+	transform:translateX(225px) translateY(-75px) rotateX(-90deg) rotateY(90deg) translateZ(75px);
+	background:red;
+	transform-style: preserve-3d;
+}
+
+.cubefaceL {
+	transform:translateX(225px) translateY(-225px) rotateX(-90deg) rotateY(-90deg) translateZ(175px);
+	background:orange;
+	transform-style: preserve-3d;
+}
+
+.cubefaceB {
+	transform:translateX(225px) translateY(-225px) rotateX(-90deg) translateZ(-325px) rotateY(180deg);
+	background:green;
+	transform-style: preserve-3d;
+}
+
+.cubefaceD {
+	transform:translateX(225px) translateY(-525px) translateZ(-175px);
+	background:white;
+}
+
+#topY0, #topY1, #topY2, #topY3, #topY4, #topY5, #topY6, #topY7, #topY8,
 #leftO0, #leftO1, #leftO2, #leftO3, #leftO4, #leftO5, #leftO6, #leftO7, #leftO8,
 #frontB0, #frontB1, #frontB2, #frontB3, #frontB4, #frontB5, #frontB6, #frontB7, #frontB8,
 #rightR0, #rightR1, #rightR2, #rightR3, #rightR4, #rightR5, #rightR6, #rightR7, #rightR8,
@@ -42,21 +86,22 @@
 	float:left;
 }
 
-#topButtons, #leftButtons, #frontButtons, #rightButtons, #bottomButtons, #backButtons {
+#topButtons, #leftButtons, #frontButtons, #rightButtons, #bottomButtons, #backButtons, #middleButtons {
 	width:118px;
 	height:58px;
 	float:left;
 	border:1px solid #000;
+	margin:auto auto;
 }
 
-#topButtons, #bottomButtons {
+/* #topButtons, #bottomButtons {
 	margin-left:120px;
 	margin-right:240px;
-}
+} */
 
 #topY0, #topY1, #topY2, #topY3, #topY4, #topY5, #topY6, #topY7, #topY8, #topButtons {
 	background-color:yellow;
-} 
+}
 
 #leftO0, #leftO1, #leftO2, #leftO3, #leftO4, #leftO5, #leftO6, #leftO7, #leftO8, #leftButtons {
 	background-color:orange;
@@ -78,3 +123,6 @@
 	background-color:white;
 }
 
+#middleButtons {
+	background-color:lightgray;
+}
