@@ -1,5 +1,5 @@
 body {
-	/* background-color:#666; */
+	background-color:#666;
 	perspective: 1200px;
 	/* transform-style: preserve-3d; */
 }
@@ -11,14 +11,16 @@ body {
 
 .button {
 	margin-top: 8px;
+	width:50%;
+	height:33%;
 }
 
 .buttonholder {
-	width:100%;
+	width:900px;
 	height:60px;
 	text-align:center;
-	position:absolute;
-	margin:200px auto;
+	position:fixed;
+	margin:200px 250px 200px 250px;
 }
 
 .cubeholder {
@@ -84,7 +86,7 @@ body {
 	float:left;
 }
 
-#topButtons, #leftButtons, #frontButtons, #rightButtons, #bottomButtons, #backButtons {
+#topButtons, #leftButtons, #frontButtons, #rightButtons, #bottomButtons, #backButtons, #middleButtons {
 	width:118px;
 	height:58px;
 	float:left;
@@ -119,4 +121,8 @@ body {
 
 #botW0, #botW1, #botW2, #botW3, #botW4, #botW5, #botW6, #botW7, #botW8, #bottomButtons {
 	background-color:white;
+}
+
+#middleButtons {
+	background-color:lightgray;
 }
