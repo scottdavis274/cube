@@ -70,7 +70,7 @@ body {
 }
 
 .cubefaceD {
-	transform:translateX(225px) translateY(-525px) translateZ(-175px);
+	transform:translateX(225px) translateY(-525px) translateZ(-175px) rotateX(180deg);
 	background:white;
 }
 
